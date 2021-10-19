@@ -1,0 +1,16 @@
+apiVersion: tapi.tasdid/v1
+kind: TCrd
+metadata:
+  name: mynew
+spec:
+  # Add fields here
+  name: "mynew"
+  finder: "fnd"
+  domain: "tasdid2.com"
+  image: "tasdidur/test-ingress"
+  port: 8001
+  target-port: 8081
+  paths:
+    - "/hi"
+    - "/hello"
+    - "/bye"

@@ -1,0 +1,16 @@
+domain: tasdid
+layout:
+- go.kubebuilder.io/v3
+projectName: finalcrd
+repo: github.com/Tasdidur/finalCRD
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: tasdid
+  group: tapi
+  kind: TCrd
+  path: github.com/Tasdidur/finalCRD/api/v1
+  version: v1
+version: "3"
